@@ -9,6 +9,7 @@ describe("render input element", () => {
     const inputElement = screen.getByRole("textbox");
     expect(inputElement).toBeInTheDocument();
     expect(inputElement).toHaveValue("");
+    expect(inputElement).toHaveAttribute("placeholder", "Enter your text");
   });
 
   test("input event should update the state", async () => {
