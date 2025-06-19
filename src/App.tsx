@@ -1,13 +1,12 @@
-import './App.css'
-import TextInput from '@/components/input/TextInput'
-
+import "./App.css";
+import TextInput from "@/components/input/TextInput";
 
 function App() {
   return (
     <>
-      <TextInput />      
+      <TextInput />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

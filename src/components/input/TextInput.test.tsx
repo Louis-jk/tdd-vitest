@@ -1,26 +1,25 @@
-import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
-import TextInput from './TextInput'
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import TextInput from "./TextInput";
 
-describe('TextInput component test', () => {
+describe("TextInput component test", () => {
+  test("test input element", async () => {
+    render(<TextInput />);
 
-    test('test input element', async () => {
-        render(<TextInput />)
-        
-        const inputElement = screen.getByRole('textbox')
-        expect(inputElement).toBeInTheDocument()  
-        expect(inputElement).toHaveValue('')
-    })
+    const inputElement = screen.getByRole("textbox");
+    expect(inputElement).toBeInTheDocument();
+    expect(inputElement).toHaveValue("");
+  });
 
-    test('test input event', async () => {
-        const user = userEvent.setup()
+  test("test input event", async () => {
+    const user = userEvent.setup();
 
-        render(<TextInput />)
+    render(<TextInput />);
 
-        const inputElement = screen.getByRole('textbox')
+    const inputElement = screen.getByRole("textbox");
 
-        await user.type(inputElement, 'Hello World')
-        expect(inputElement).toHaveValue('Hello World')
-        expect(screen.getByText('Hello World')).toBeInTheDocument()
-    })
-})
+    await user.type(inputElement, "Hello World");
+    expect(inputElement).toHaveValue("Hello World");
+    expect(screen.getByText("Hello World")).toBeInTheDocument();
+  });
+});
