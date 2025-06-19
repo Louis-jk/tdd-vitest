@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event";
 import TextInput from "./TextInput";
 
 describe("render input element", () => {
-  test("input element should be in the document", async () => {
+  test("render input element", async () => {
     render(<TextInput />);
 
     const inputElement = screen.getByRole("textbox");
