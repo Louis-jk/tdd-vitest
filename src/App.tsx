@@ -5,7 +5,9 @@ import { Button } from "@/components/ui/button";
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold">Hello world!</h1>
+      <h1 className="text-3xl font-bold" data-testid="title">
+        Cypress Demo
+      </h1>
       <TextInput />
       <Button>Click me</Button>
     </>
