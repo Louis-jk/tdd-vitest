@@ -31,8 +31,26 @@ type Story = StoryObj<StoryProps>;
 
 export const Default: Story = {
   args: {
-    buttonText: "Hello",
+    buttonText: "Default Button",
     variant: "primary",
+    size: "md",
+  },
+  render: ({ buttonText, ...args }) => <Button {...args}>{buttonText}</Button>,
+};
+
+export const Primary: Story = {
+  args: {
+    buttonText: "Primary Button",
+    variant: "primary",
+    size: "md",
+  },
+  render: ({ buttonText, ...args }) => <Button {...args}>{buttonText}</Button>,
+};
+
+export const Secondary: Story = {
+  args: {
+    buttonText: "Secondary Button",
+    variant: "secondary",
     size: "md",
   },
   render: ({ buttonText, ...args }) => <Button {...args}>{buttonText}</Button>,
