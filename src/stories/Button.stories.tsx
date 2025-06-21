@@ -31,7 +31,7 @@ type Story = StoryObj<StoryProps>;
 
 export const Default: Story = {
   args: {
-    buttonText: "Default Button",
+    buttonText: "Button",
     variant: "primary",
     size: "md",
   },
@@ -40,7 +40,7 @@ export const Default: Story = {
 
 export const Primary: Story = {
   args: {
-    buttonText: "Primary Button",
+    buttonText: "Button",
     variant: "primary",
     size: "md",
   },
@@ -49,7 +49,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    buttonText: "Secondary Button",
+    buttonText: "Button",
     variant: "secondary",
     size: "md",
   },
